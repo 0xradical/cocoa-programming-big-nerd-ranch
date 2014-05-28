@@ -18,6 +18,7 @@
 		AFE0AE8A19358A35008A77E3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFE0AE6919358A35008A77E3 /* Cocoa.framework */; };
 		AFE0AE9219358A35008A77E3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFE0AE9019358A35008A77E3 /* InfoPlist.strings */; };
 		AFE0AE9419358A35008A77E3 /* RandomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0AE9319358A35008A77E3 /* RandomTests.m */; };
+		AFE0AE9F1936140E008A77E3 /* RandomController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE0AE9E1936140E008A77E3 /* RandomController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		AFE0AE8F19358A35008A77E3 /* RandomTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RandomTests-Info.plist"; sourceTree = "<group>"; };
 		AFE0AE9119358A35008A77E3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AFE0AE9319358A35008A77E3 /* RandomTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomTests.m; sourceTree = "<group>"; };
+		AFE0AE9D1936140E008A77E3 /* RandomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomController.h; sourceTree = "<group>"; };
+		AFE0AE9E1936140E008A77E3 /* RandomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				AFE0AE7B19358A35008A77E3 /* RandomAppDelegate.h */,
 				AFE0AE7C19358A35008A77E3 /* RandomAppDelegate.m */,
 				AFE0AE7E19358A35008A77E3 /* MainMenu.xib */,
+				AFE0AE9D1936140E008A77E3 /* RandomController.h */,
+				AFE0AE9E1936140E008A77E3 /* RandomController.m */,
 				AFE0AE8119358A35008A77E3 /* Images.xcassets */,
 				AFE0AE7019358A35008A77E3 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE0AE9F1936140E008A77E3 /* RandomController.m in Sources */,
 				AFE0AE7619358A35008A77E3 /* main.m in Sources */,
 				AFE0AE7D19358A35008A77E3 /* RandomAppDelegate.m in Sources */,
 			);
@@ -467,6 +473,7 @@
 				AFE0AE9919358A35008A77E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFE0AE9A19358A35008A77E3 /* Build configuration list for PBXNativeTarget "RandomTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +482,7 @@
 				AFE0AE9C19358A35008A77E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
