@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF2F580B1936BEF000B4711F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F580A1936BEF000B4711F /* Cocoa.framework */; };
+		AF2F58151936BEF000B4711F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2F58131936BEF000B4711F /* InfoPlist.strings */; };
+		AF2F58171936BEF000B4711F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2F58161936BEF000B4711F /* main.m */; };
+		AF2F581B1936BEF000B4711F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF2F58191936BEF000B4711F /* Credits.rtf */; };
+		AF2F581E1936BEF000B4711F /* WindowResizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2F581D1936BEF000B4711F /* WindowResizerAppDelegate.m */; };
+		AF2F58211936BEF000B4711F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF2F581F1936BEF000B4711F /* MainMenu.xib */; };
+		AF2F58231936BEF000B4711F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF2F58221936BEF000B4711F /* Images.xcassets */; };
+		AF2F582A1936BEF000B4711F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F58291936BEF000B4711F /* XCTest.framework */; };
+		AF2F582B1936BEF000B4711F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF2F580A1936BEF000B4711F /* Cocoa.framework */; };
+		AF2F58331936BEF000B4711F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF2F58311936BEF000B4711F /* InfoPlist.strings */; };
+		AF2F58351936BEF000B4711F /* WindowResizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF2F58341936BEF000B4711F /* WindowResizerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF2F582C1936BEF000B4711F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF2F57FF1936BEF000B4711F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2F58061936BEF000B4711F;
+			remoteInfo = WindowResizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF2F58071936BEF000B4711F /* WindowResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F580A1936BEF000B4711F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AF2F580D1936BEF000B4711F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AF2F580E1936BEF000B4711F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AF2F580F1936BEF000B4711F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF2F58121936BEF000B4711F /* WindowResizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindowResizer-Info.plist"; sourceTree = "<group>"; };
+		AF2F58141936BEF000B4711F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF2F58161936BEF000B4711F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF2F58181936BEF000B4711F /* WindowResizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WindowResizer-Prefix.pch"; sourceTree = "<group>"; };
+		AF2F581A1936BEF000B4711F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AF2F581C1936BEF000B4711F /* WindowResizerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowResizerAppDelegate.h; sourceTree = "<group>"; };
+		AF2F581D1936BEF000B4711F /* WindowResizerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowResizerAppDelegate.m; sourceTree = "<group>"; };
+		AF2F58201936BEF000B4711F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AF2F58221936BEF000B4711F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF2F58281936BEF000B4711F /* WindowResizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WindowResizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF2F58291936BEF000B4711F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF2F58301936BEF000B4711F /* WindowResizerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WindowResizerTests-Info.plist"; sourceTree = "<group>"; };
+		AF2F58321936BEF000B4711F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF2F58341936BEF000B4711F /* WindowResizerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowResizerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF2F58041936BEF000B4711F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F580B1936BEF000B4711F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F58251936BEF000B4711F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F582B1936BEF000B4711F /* Cocoa.framework in Frameworks */,
+				AF2F582A1936BEF000B4711F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF2F57FE1936BEF000B4711F = {
+			isa = PBXGroup;
+			children = (
+				AF2F58101936BEF000B4711F /* WindowResizer */,
+				AF2F582E1936BEF000B4711F /* WindowResizerTests */,
+				AF2F58091936BEF000B4711F /* Frameworks */,
+				AF2F58081936BEF000B4711F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF2F58081936BEF000B4711F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F58071936BEF000B4711F /* WindowResizer.app */,
+				AF2F58281936BEF000B4711F /* WindowResizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF2F58091936BEF000B4711F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F580A1936BEF000B4711F /* Cocoa.framework */,
+				AF2F58291936BEF000B4711F /* XCTest.framework */,
+				AF2F580C1936BEF000B4711F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF2F580C1936BEF000B4711F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F580D1936BEF000B4711F /* AppKit.framework */,
+				AF2F580E1936BEF000B4711F /* CoreData.framework */,
+				AF2F580F1936BEF000B4711F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AF2F58101936BEF000B4711F /* WindowResizer */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F581C1936BEF000B4711F /* WindowResizerAppDelegate.h */,
+				AF2F581D1936BEF000B4711F /* WindowResizerAppDelegate.m */,
+				AF2F581F1936BEF000B4711F /* MainMenu.xib */,
+				AF2F58221936BEF000B4711F /* Images.xcassets */,
+				AF2F58111936BEF000B4711F /* Supporting Files */,
+			);
+			path = WindowResizer;
+			sourceTree = "<group>";
+		};
+		AF2F58111936BEF000B4711F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F58121936BEF000B4711F /* WindowResizer-Info.plist */,
+				AF2F58131936BEF000B4711F /* InfoPlist.strings */,
+				AF2F58161936BEF000B4711F /* main.m */,
+				AF2F58181936BEF000B4711F /* WindowResizer-Prefix.pch */,
+				AF2F58191936BEF000B4711F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF2F582E1936BEF000B4711F /* WindowResizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F58341936BEF000B4711F /* WindowResizerTests.m */,
+				AF2F582F1936BEF000B4711F /* Supporting Files */,
+			);
+			path = WindowResizerTests;
+			sourceTree = "<group>";
+		};
+		AF2F582F1936BEF000B4711F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F58301936BEF000B4711F /* WindowResizerTests-Info.plist */,
+				AF2F58311936BEF000B4711F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2F58061936BEF000B4711F /* WindowResizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F58381936BEF000B4711F /* Build configuration list for PBXNativeTarget "WindowResizer" */;
+			buildPhases = (
+				AF2F58031936BEF000B4711F /* Sources */,
+				AF2F58041936BEF000B4711F /* Frameworks */,
+				AF2F58051936BEF000B4711F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WindowResizer;
+			productName = WindowResizer;
+			productReference = AF2F58071936BEF000B4711F /* WindowResizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF2F58271936BEF000B4711F /* WindowResizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF2F583B1936BEF000B4711F /* Build configuration list for PBXNativeTarget "WindowResizerTests" */;
+			buildPhases = (
+				AF2F58241936BEF000B4711F /* Sources */,
+				AF2F58251936BEF000B4711F /* Frameworks */,
+				AF2F58261936BEF000B4711F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF2F582D1936BEF000B4711F /* PBXTargetDependency */,
+			);
+			name = WindowResizerTests;
+			productName = WindowResizerTests;
+			productReference = AF2F58281936BEF000B4711F /* WindowResizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF2F57FF1936BEF000B4711F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WindowResizer;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = bignerdranch;
+				TargetAttributes = {
+					AF2F58271936BEF000B4711F = {
+						TestTargetID = AF2F58061936BEF000B4711F;
+					};
+				};
+			};
+			buildConfigurationList = AF2F58021936BEF000B4711F /* Build configuration list for PBXProject "WindowResizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF2F57FE1936BEF000B4711F;
+			productRefGroup = AF2F58081936BEF000B4711F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF2F58061936BEF000B4711F /* WindowResizer */,
+				AF2F58271936BEF000B4711F /* WindowResizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF2F58051936BEF000B4711F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F58151936BEF000B4711F /* InfoPlist.strings in Resources */,
+				AF2F58231936BEF000B4711F /* Images.xcassets in Resources */,
+				AF2F581B1936BEF000B4711F /* Credits.rtf in Resources */,
+				AF2F58211936BEF000B4711F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F58261936BEF000B4711F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F58331936BEF000B4711F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF2F58031936BEF000B4711F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F58171936BEF000B4711F /* main.m in Sources */,
+				AF2F581E1936BEF000B4711F /* WindowResizerAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2F58241936BEF000B4711F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF2F58351936BEF000B4711F /* WindowResizerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF2F582D1936BEF000B4711F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF2F58061936BEF000B4711F /* WindowResizer */;
+			targetProxy = AF2F582C1936BEF000B4711F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF2F58131936BEF000B4711F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2F58141936BEF000B4711F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF2F58191936BEF000B4711F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2F581A1936BEF000B4711F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AF2F581F1936BEF000B4711F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2F58201936BEF000B4711F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AF2F58311936BEF000B4711F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF2F58321936BEF000B4711F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF2F58361936BEF000B4711F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AF2F58371936BEF000B4711F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AF2F58391936BEF000B4711F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WindowResizer/WindowResizer-Prefix.pch";
+				INFOPLIST_FILE = "WindowResizer/WindowResizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF2F583A1936BEF000B4711F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WindowResizer/WindowResizer-Prefix.pch";
+				INFOPLIST_FILE = "WindowResizer/WindowResizer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF2F583C1936BEF000B4711F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WindowResizer.app/Contents/MacOS/WindowResizer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WindowResizer/WindowResizer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WindowResizerTests/WindowResizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF2F583D1936BEF000B4711F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WindowResizer.app/Contents/MacOS/WindowResizer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WindowResizer/WindowResizer-Prefix.pch";
+				INFOPLIST_FILE = "WindowResizerTests/WindowResizerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF2F58021936BEF000B4711F /* Build configuration list for PBXProject "WindowResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F58361936BEF000B4711F /* Debug */,
+				AF2F58371936BEF000B4711F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF2F58381936BEF000B4711F /* Build configuration list for PBXNativeTarget "WindowResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F58391936BEF000B4711F /* Debug */,
+				AF2F583A1936BEF000B4711F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF2F583B1936BEF000B4711F /* Build configuration list for PBXNativeTarget "WindowResizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF2F583C1936BEF000B4711F /* Debug */,
+				AF2F583D1936BEF000B4711F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF2F57FF1936BEF000B4711F /* Project object */;
+}
