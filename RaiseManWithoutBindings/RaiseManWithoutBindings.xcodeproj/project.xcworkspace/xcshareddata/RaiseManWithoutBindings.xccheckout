@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>55C52234-6DBD-467E-BB71-4D3BE9AE6ED0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RaiseManWithoutBindings</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>90CF0C34-39DD-4FE9-BA77-8206C3979159</key>
+		<string>ssh://github.com/thiagobrandam/cocoa-programming-big-nerd-ranch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RaiseManWithoutBindings/RaiseManWithoutBindings.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>90CF0C34-39DD-4FE9-BA77-8206C3979159</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/thiagobrandam/cocoa-programming-big-nerd-ranch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>90CF0C34-39DD-4FE9-BA77-8206C3979159</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>90CF0C34-39DD-4FE9-BA77-8206C3979159</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocoa-programming-big-nerd-ranch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
