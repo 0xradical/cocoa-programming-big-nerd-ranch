@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class Person;
 
 @interface RMDocument : NSDocument
 
 @property (nonatomic) NSMutableArray *employees;
+
+- (void)insertObject:(Person *)employee
+  inEmployeesAtIndex:(NSUInteger)index;
+
+- (void)removeObjectFromEmployeesAtIndex:(NSUInteger)index;
 
 @end

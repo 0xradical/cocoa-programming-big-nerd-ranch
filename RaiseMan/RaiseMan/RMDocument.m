@@ -56,4 +56,39 @@
     return YES;
 }
 
+#pragma mark - KVC for employees
+
+- (void)insertObject:(Person *)employee inEmployeesAtIndex:(NSUInteger)index
+{
+    NSLog(@"Adding %@ to %@", employee, _employees);
+    
+    NSUndoManager *undo = [self undoManager];
+    
+    [[undo prepareWithInvocationTarget:self] removeObjectFromEmployeesAtIndex:index];
+    
+    if (![undo isUndoing]) {
+        [undo setActionName:@"Add Person"];
+    }
+    
+    [_employees insertObject:employee atIndex:index];
+}
+
+- (void)removeObjectFromEmployeesAtIndex:(NSUInteger)index
+{
+    Person *employee = [_employees objectAtIndex:index];
+    
+    NSLog(@"Removing %@ from %@", employee, _employees);
+    
+    NSUndoManager *undo = [self undoManager];
+    
+    [[undo prepareWithInvocationTarget:self] insertObject:employee
+                                       inEmployeesAtIndex:index];
+    
+    if (![undo isUndoing]) {
+        [undo setActionName:@"Remove Person"];
+    }
+    
+    [_employees removeObjectAtIndex:index];
+}
+
 @end
