@@ -12,10 +12,14 @@
 @interface RMDocument : NSDocument
 
 @property (nonatomic) NSMutableArray *employees;
+@property (nonatomic) IBOutlet NSTableView *tableView;
+@property (nonatomic) IBOutlet NSArrayController *employeeController;
 
 - (void)insertObject:(Person *)employee
   inEmployeesAtIndex:(NSUInteger)index;
 
 - (void)removeObjectFromEmployeesAtIndex:(NSUInteger)index;
+
+- (IBAction)createEmployee:(id)sender;
 
 @end
