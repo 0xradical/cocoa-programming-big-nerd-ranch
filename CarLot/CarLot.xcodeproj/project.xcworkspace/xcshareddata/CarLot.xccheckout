@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>278CB4CC-959E-4949-BA62-4755FB3821AC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CarLot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BCF1512B-C682-4D92-8F59-6A9EB141ACAE</key>
+		<string>ssh://github.com/thiagobrandam/cocoa-programming-big-nerd-ranch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CarLot/CarLot.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BCF1512B-C682-4D92-8F59-6A9EB141ACAE</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/thiagobrandam/cocoa-programming-big-nerd-ranch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BCF1512B-C682-4D92-8F59-6A9EB141ACAE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCF1512B-C682-4D92-8F59-6A9EB141ACAE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocoa-programming-big-nerd-ranch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
