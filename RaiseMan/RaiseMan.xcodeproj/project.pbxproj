@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */; };
 		AFF925C6193768F000116463 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF925C5193768F000116463 /* Cocoa.framework */; };
 		AFF925D0193768F100116463 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFF925CE193768F100116463 /* InfoPlist.strings */; };
 		AFF925D2193768F100116463 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF925D1193768F100116463 /* main.m */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RaiseMan.icns; sourceTree = "<group>"; };
 		AFF925C2193768F000116463 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF925C5193768F000116463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AFF925C8193768F100116463 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 		AFF925CC193768F100116463 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */,
 				AFF925CD193768F100116463 /* RaiseMan-Info.plist */,
 				AFF925CE193768F100116463 /* InfoPlist.strings */,
 				AFF925D1193768F100116463 /* main.m */,
@@ -243,6 +246,7 @@
 				AFF925E1193768F100116463 /* Images.xcassets in Resources */,
 				AFF925D0193768F100116463 /* InfoPlist.strings in Resources */,
 				AFF925D6193768F100116463 /* Credits.rtf in Resources */,
+				AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */,
 				AFF925DF193768F100116463 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +489,7 @@
 				AFF925F8193768F100116463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFF925F9193768F100116463 /* Build configuration list for PBXNativeTarget "RaiseManTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +498,7 @@
 				AFF925FB193768F100116463 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
