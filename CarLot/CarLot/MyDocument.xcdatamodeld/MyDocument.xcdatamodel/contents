@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13D65" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Car" representedClassName="Car" syncable="YES">
+    <entity name="Car" representedClassName="" syncable="YES">
         <attribute name="condition" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="datePurchased" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="makeModel" optional="YES" attributeType="String" syncable="YES"/>

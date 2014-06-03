@@ -69,8 +69,8 @@
                                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <connections>
-                                                                <binding destination="WAh-aQ-le7" name="fontBold" keyPath="objectValue.onSpecial" id="HmR-AR-96N"/>
                                                                 <binding destination="WAh-aQ-le7" name="value" keyPath="objectValue.makeModel" id="Z45-Fe-jvA"/>
+                                                                <binding destination="WAh-aQ-le7" name="fontBold" keyPath="objectValue.onSpecial" id="HmR-AR-96N"/>
                                                             </connections>
                                                         </textField>
                                                     </subviews>
@@ -297,9 +297,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <outlet property="delegate" destination="-2" id="0bl-1N-x8E"/>
             </connections>
         </window>
-        <arrayController mode="entity" automaticallyPreparesContent="YES" id="VWp-ZT-NdH" userLabel="Cars">
+        <arrayController mode="entity" entityName="Car" automaticallyPreparesContent="YES" id="VWp-ZT-NdH" userLabel="Cars">
             <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self" id="lS1-Bc-uRV"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="managedObjectContext" id="HiI-nA-v5U"/>
             </connections>
         </arrayController>
         <userDefaultsController representsSharedInstance="YES" id="sYr-a5-S3A"/>
