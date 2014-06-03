@@ -37,4 +37,40 @@
     return YES;
 }
 
+- (IBAction)createCar:(id)sender
+{
+    NSWindow *w = [[self tableView] window];
+    
+    BOOL editingEnded = [w makeFirstResponder:w];
+    
+    if (!editingEnded) {
+        NSLog(@"Unable to end editing");
+        return;
+    }
+    
+    NSUndoManager *undo = [self undoManager];
+    
+    if ([undo groupingLevel] > 0) {
+        [undo endUndoGrouping];
+        [undo beginUndoGrouping];
+    }
+    
+    id car = [[self CarArrayController] newObject];
+    
+    [[self CarArrayController] addObject:car];
+    
+    [[self CarArrayController] rearrangeObjects];
+    
+    NSArray *a = [[self CarArrayController] arrangedObjects];
+    
+    NSUInteger row = [a indexOfObjectIdenticalTo:car];
+    
+    NSLog(@"Starting edit of %@ in row %lu", car, row);
+    
+   [[self tableView] editColumn:0
+                            row:row
+                      withEvent:nil
+                         select:YES];
+    
+}
 @end

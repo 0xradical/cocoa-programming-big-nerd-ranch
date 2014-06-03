@@ -10,4 +10,9 @@
 
 @interface MyDocument : NSPersistentDocument
 
+@property (weak) IBOutlet NSTableView *tableView;
+@property (strong) IBOutlet NSArrayController *CarArrayController;
+
+- (IBAction)createCar:(id)sender;
+
 @end
