@@ -19,6 +19,15 @@ static void *RMDocumentKVOContext;
     self = [super init];
     if (self) {
         _employees = [[NSMutableArray alloc] init];
+        
+        NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+        
+        [nc addObserver:self
+               selector:@selector(handleColorChange:)
+                   name:BNRColorChangedNotification
+                 object:nil];
+        
+        NSLog(@"Registered with notification center");
     }
     return self;
 }
@@ -227,6 +236,22 @@ static void *RMDocumentKVOContext;
     for (Person *person in _employees) {
         [self startObservingPerson:person];
     }
+}
+
+#pragma mark - Notification methods
+
+- (void)handleColorChange:(NSNotification *)notification
+{
+    NSLog(@"Received notification: %@", notification);
+    NSColor *color = [[notification userInfo] valueForKey:@"color"];    
+    [[self tableView] setBackgroundColor:color];
+}
+
+#pragma mark - Dealloc
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

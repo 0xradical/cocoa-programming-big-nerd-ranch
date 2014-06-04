@@ -46,4 +46,17 @@
     return [PreferenceController preferenceEmptyDoc];
 }
 
+
+#pragma mark - Application Notifications
+
+// When some object is a delegate, it also receives notifications
+// for NotificationCenter, because the delegator automatically
+// adds the delegate as an observer
+// These methods makes part of the Application Delegate protocol as well
+- (void)applicationDidResignActive:(NSNotification *)notification
+{
+    NSLog(@"Application resigned its active state");
+    NSBeep();
+}
+
 @end

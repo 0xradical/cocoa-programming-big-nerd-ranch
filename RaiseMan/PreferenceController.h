@@ -12,6 +12,8 @@
 extern NSString* const BNRTableBgColorKey;
 extern NSString* const BNREmptyDocKey;
 
+// Notification types
+extern NSString* const BNRColorChangedNotification;
 
 @interface PreferenceController : NSWindowController
 

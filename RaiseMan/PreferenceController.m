@@ -10,10 +10,11 @@
 
 NSString* const BNRTableBgColorKey = @"BNRTableBackgroundColor";
 NSString* const BNREmptyDocKey = @"BNREmptyDocumentFlag";
+NSString* const BNRColorChangedNotification = @"BNRColorChanged";
 
 @implementation PreferenceController
 
-#pragma mark - PreferenceController initializer
+#pragma mark - PreferenceController class "initializer"
 + (void)initialize
 {
     // Create a dictionary
@@ -61,6 +62,17 @@ NSString* const BNREmptyDocKey = @"BNREmptyDocumentFlag";
 {
     NSColor *color = [[self colorWell] color];
     [PreferenceController setPreferenceTableBgColor:color];
+    
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    
+    NSDictionary *userInfo = [NSDictionary dictionaryWithObject:color
+                                                         forKey:@"color"];
+    
+    NSLog(@"Sending notification");
+    
+    [nc postNotificationName:BNRColorChangedNotification
+                      object:self
+                    userInfo:userInfo];
 }
 
 - (IBAction)changeNewEmptyDoc:(id)sender

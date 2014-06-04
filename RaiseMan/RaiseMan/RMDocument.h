@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "PreferenceController.h" // Use BNRTableBgColorKey
+#import "PreferenceController.h" // Use PreferenceController constants
 @class Person;
 
 @interface RMDocument : NSDocument
@@ -18,7 +18,6 @@
 
 - (void)insertObject:(Person *)employee
   inEmployeesAtIndex:(NSUInteger)index;
-
 - (void)removeObjectFromEmployeesAtIndex:(NSUInteger)index;
 
 - (IBAction)createEmployee:(id)sender;
