@@ -47,6 +47,11 @@
 		AF36538A193EAA51003A4FB6 /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
 		AF36538C193EADFE003A4FB6 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		AF36538D193EADFE003A4FB6 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		AF43B32A193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-BR"; path = "pt-BR.lproj/MainMenu.xib"; sourceTree = "<group>"; };
+		AF43B32B193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "pt-BR"; path = "pt-BR.lproj/RMDocument.xib"; sourceTree = "<group>"; };
+		AF43B32C193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		AF43B32D193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "pt-BR"; path = "pt-BR.lproj/Credits.rtf"; sourceTree = "<group>"; };
+		AF43B32E193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RaiseMan.icns; sourceTree = "<group>"; };
 		AFF925C2193768F000116463 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF925C5193768F000116463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -246,6 +251,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = AFF925B9193768F000116463;
 			productRefGroup = AFF925C3193768F000116463 /* Products */;
@@ -321,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AFF925CF193768F100116463 /* en */,
+				AF43B32C193F8FF900917DE3 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -329,6 +336,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AFF925D5193768F100116463 /* en */,
+				AF43B32D193F8FF900917DE3 /* pt-BR */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -337,6 +345,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AFF925DB193768F100116463 /* Base */,
+				AF43B32B193F8FF900917DE3 /* pt-BR */,
 			);
 			name = RMDocument.xib;
 			sourceTree = "<group>";
@@ -345,6 +354,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AFF925DE193768F100116463 /* Base */,
+				AF43B32A193F8FF900917DE3 /* pt-BR */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -353,6 +363,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AFF925F0193768F100116463 /* en */,
+				AF43B32E193F8FF900917DE3 /* pt-BR */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
