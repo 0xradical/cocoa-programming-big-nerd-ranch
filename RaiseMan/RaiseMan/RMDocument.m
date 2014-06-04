@@ -88,9 +88,11 @@ static void *RMDocumentKVOContext;
     return YES;
 }
 
+#pragma mark - IBActions
+
 - (IBAction)createEmployee:(id)sender
 {
-    NSWindow *w = [_tableView window];
+    NSWindow *w = [[self tableView] window];
     
     BOOL editingEnded = [w makeFirstResponder:w];
     if (!editingEnded) {
@@ -105,23 +107,57 @@ static void *RMDocumentKVOContext;
         [undo beginUndoGrouping];
     }
     
-    Person *employee = [_employeeController newObject];
+    Person *employee = [[self employeeController] newObject];
     
-    [_employeeController addObject:employee];
+    [[self employeeController] addObject:employee];
     
-    [_employeeController rearrangeObjects];
+    [[self employeeController] rearrangeObjects];
     
-    NSArray *a = [_employeeController arrangedObjects];
+    NSArray *a = [[self employeeController] arrangedObjects];
     
     NSUInteger row = [a indexOfObjectIdenticalTo:employee];
     
     NSLog(@"Starting edit of %@ in row %lu", employee, row);
     
-    [_tableView editColumn:0
-                       row:row
-                 withEvent:nil
-                    select:YES];
+    [[self tableView] editColumn:0
+                             row:row
+                       withEvent:nil
+                          select:YES];
 }
+
+ - (IBAction)removeEmployee:(id)sender
+{
+    NSArray *selectedPeople = [[self employeeController] selectedObjects];
+    
+    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to remove these people?"
+                                     defaultButton:@"Remove"
+                                   alternateButton:@"Cancel"
+                                       otherButton:nil
+                         informativeTextWithFormat:@"%lu people will be removed", (unsigned long)[selectedPeople count]];
+    
+    // An alert sheet is an alert window
+    // That appears atop of the current window
+    // Within the window
+    NSLog(@"Starting alert sheet");
+    
+    [alert beginSheetModalForWindow:[[self tableView] window]
+                      modalDelegate:self
+                     didEndSelector:@selector(alertEnded:code:context:)
+                        contextInfo:NULL];
+}
+
+- (void)alertEnded:(NSAlert *)alert
+              code:(NSInteger)choice
+           context:(void *)v
+{
+    NSLog(@"Alert sheet ended");
+    
+    if (choice == NSAlertDefaultReturn) {
+        [[self employeeController] remove:nil];
+    }
+}
+
+
 
 #pragma mark - KVC for employees
 

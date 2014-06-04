@@ -21,5 +21,6 @@
 - (void)removeObjectFromEmployeesAtIndex:(NSUInteger)index;
 
 - (IBAction)createEmployee:(id)sender;
+- (IBAction)removeEmployee:(id)sender;
 
 @end
