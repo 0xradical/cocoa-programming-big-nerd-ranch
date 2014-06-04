@@ -129,11 +129,11 @@ static void *RMDocumentKVOContext;
 {
     NSArray *selectedPeople = [[self employeeController] selectedObjects];
     
-    NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to remove these people?"
-                                     defaultButton:@"Remove"
-                                   alternateButton:@"Cancel"
-                                       otherButton:@"Keep, but no raise"
-                         informativeTextWithFormat:@"%lu people will be removed", (unsigned long)[selectedPeople count]];
+    NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"REMOVE_MSG", @"Remove")
+                                     defaultButton:NSLocalizedString(@"REMOVE", @"Remove")
+                                   alternateButton:NSLocalizedString(@"CANCEL", @"Cancel")
+                                       otherButton:NSLocalizedString(@"KEEP_NO_RAISE", @"Keep, but no raise")
+                         informativeTextWithFormat:NSLocalizedString(@"REMOVE_INF",@"%lu people will be removed"), (unsigned long)[selectedPeople count]];
     
     // An alert sheet is an alert window
     // That appears atop of the current window

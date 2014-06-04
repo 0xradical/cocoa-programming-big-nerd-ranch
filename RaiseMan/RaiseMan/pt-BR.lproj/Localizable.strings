@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  RaiseMan
+
+  Created by thiago on 6/4/14.
+  Copyright (c) 2014 bignerdranch. All rights reserved.
+*/
+
+"REMOVE_MSG" = "Você realmente deseja remover essas pessoas?";
+"REMOVE_INF" = "%d pessoas serão removidas.";
+"KEEP_NO_RAISE" = "Manter, mas sem aumento";
+"REMOVE" = "Remover";
+"CANCEL" = "Cancelar";

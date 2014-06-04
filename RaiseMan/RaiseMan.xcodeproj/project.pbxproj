@@ -12,6 +12,7 @@
 		AF365389193E9D6A003A4FB6 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF365388193E9D69003A4FB6 /* Preferences.xib */; };
 		AF36538B193EAA51003A4FB6 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF36538A193EAA51003A4FB6 /* About.xib */; };
 		AF36538E193EADFE003A4FB6 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF36538D193EADFE003A4FB6 /* AboutController.m */; };
+		AF43B331193FDC1900917DE3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF43B32F193FDC1900917DE3 /* Localizable.strings */; };
 		AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */; };
 		AFF925C6193768F000116463 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF925C5193768F000116463 /* Cocoa.framework */; };
 		AFF925D0193768F100116463 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFF925CE193768F100116463 /* InfoPlist.strings */; };
@@ -52,6 +53,8 @@
 		AF43B32C193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AF43B32D193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = "pt-BR"; path = "pt-BR.lproj/Credits.rtf"; sourceTree = "<group>"; };
 		AF43B32E193F8FF900917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		AF43B330193FDC1900917DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AF43B332193FDC6D00917DE3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RaiseMan.icns; sourceTree = "<group>"; };
 		AFF925C2193768F000116463 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF925C5193768F000116463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -156,6 +159,7 @@
 				AFF925D8193768F100116463 /* RMDocument.m */,
 				AFF925DA193768F100116463 /* RMDocument.xib */,
 				AFF925CC193768F100116463 /* Supporting Files */,
+				AF43B32F193FDC1900917DE3 /* Localizable.strings */,
 			);
 			path = RaiseMan;
 			sourceTree = "<group>";
@@ -273,6 +277,7 @@
 				AFF925DC193768F100116463 /* RMDocument.xib in Resources */,
 				AFF925E1193768F100116463 /* Images.xcassets in Resources */,
 				AFF925D0193768F100116463 /* InfoPlist.strings in Resources */,
+				AF43B331193FDC1900917DE3 /* Localizable.strings in Resources */,
 				AFF925D6193768F100116463 /* Credits.rtf in Resources */,
 				AF36538B193EAA51003A4FB6 /* About.xib in Resources */,
 				AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */,
@@ -323,6 +328,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		AF43B32F193FDC1900917DE3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF43B330193FDC1900917DE3 /* en */,
+				AF43B332193FDC6D00917DE3 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		AFF925CE193768F100116463 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
