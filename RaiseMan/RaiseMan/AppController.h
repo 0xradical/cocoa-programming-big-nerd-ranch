@@ -10,7 +10,7 @@
 @class PreferenceController;
 @class AboutController;
 
-@interface AppController : NSObject
+@interface AppController : NSObject <NSApplicationDelegate>
 
 @property (nonatomic) AboutController *aboutController;
 @property (nonatomic) PreferenceController *preferenceController;

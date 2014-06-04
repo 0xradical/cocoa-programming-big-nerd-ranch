@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PreferenceController.h" // Use BNRTableBgColorKey
 @class Person;
 
 @interface RMDocument : NSDocument

@@ -34,4 +34,16 @@
     [[self aboutController] showWindow:self];
 }
 
+#pragma mark - Application Delegate protocol
+
+// As always, delegates defined in XIBs are not required
+// to mark a protocol conformance but I still do it
+// to make Xcode do the autocomplete magic :)
+- (BOOL)applicationShouldOpenUntitledFile:(NSApplication *)sender
+{
+    NSLog(@"applicationShouldOpenUntitledFile:");
+    
+    return [PreferenceController preferenceEmptyDoc];
+}
+
 @end

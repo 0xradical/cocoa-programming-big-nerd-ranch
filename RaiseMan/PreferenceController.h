@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+// Defaults for this App
+extern NSString* const BNRTableBgColorKey;
+extern NSString* const BNREmptyDocKey;
+
+
 @interface PreferenceController : NSWindowController
 
 @property (nonatomic) IBOutlet NSColorWell *colorWell;
@@ -15,5 +20,12 @@
 
 - (IBAction)changeBackgroundColor:(id)sender;
 - (IBAction)changeNewEmptyDoc:(id)sender;
+- (IBAction)resetPreferences:(id)sender;
+
+
++ (NSColor*)preferenceTableBgColor;
++ (void)setPreferenceTableBgColor:(NSColor*)color;
++ (BOOL)preferenceEmptyDoc;
++ (void)setPreferenceEmptyDoc:(BOOL)emptyDoc;
 
 @end

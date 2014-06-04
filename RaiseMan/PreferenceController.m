@@ -8,13 +8,33 @@
 
 #import "PreferenceController.h"
 
-@interface PreferenceController ()
-
-@end
+NSString* const BNRTableBgColorKey = @"BNRTableBackgroundColor";
+NSString* const BNREmptyDocKey = @"BNREmptyDocumentFlag";
 
 @implementation PreferenceController
 
+#pragma mark - PreferenceController initializer
++ (void)initialize
+{
+    // Create a dictionary
+    NSMutableDictionary *defaultValues = [NSMutableDictionary dictionary];
+    
+    // NSColor objects do not know how to write
+    // themselves out as XML
+    NSData *colorAsData = [NSKeyedArchiver archivedDataWithRootObject:[NSColor yellowColor]];
+    
+    [defaultValues setObject:colorAsData
+                      forKey:BNRTableBgColorKey];
+    
+    [defaultValues setObject:[NSNumber numberWithBool:YES]
+                      forKey:BNREmptyDocKey];
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultValues];
+    
+    NSLog(@"Registered defaults: %@", defaultValues);
+}
 
+#pragma mark - Designated initializer
 - (instancetype)init
 {
     // super is still self
@@ -26,22 +46,68 @@
     return self;
 }
 
+#pragma mark - Delegated methods from the window
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    NSLog(@"Nib file is loaded");
+    
+    [[self colorWell] setColor:[PreferenceController preferenceTableBgColor]];
+    [[self checkBox] setState:[PreferenceController preferenceEmptyDoc]];
 }
+
+#pragma mark - IBActions
 
 - (IBAction)changeBackgroundColor:(id)sender
 {
     NSColor *color = [[self colorWell] color];
-    NSLog(@"Color changed: %@", color);
+    [PreferenceController setPreferenceTableBgColor:color];
 }
 
 - (IBAction)changeNewEmptyDoc:(id)sender
 {
     NSInteger state = [[self checkBox] state];
-    NSLog(@"Checkbox changed: %ld", state);
+    [PreferenceController setPreferenceEmptyDoc:state];
+}
+
+- (IBAction)resetPreferences:(id)sender
+{
+    [PreferenceController setPreferenceTableBgColor:[NSColor blueColor]];
+    [PreferenceController setPreferenceEmptyDoc:YES];
+
+    [[self colorWell] setColor:[PreferenceController preferenceTableBgColor]];
+    [[self checkBox] setState:[PreferenceController preferenceEmptyDoc]];
+}
+
+#pragma mark - User defaults methods
+
++ (NSColor*)preferenceTableBgColor
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSData *colorAsData = [defaults objectForKey:BNRTableBgColorKey];
+    
+    return [NSKeyedUnarchiver unarchiveObjectWithData:colorAsData];
+}
+
++ (void)setPreferenceTableBgColor:(NSColor *)color
+{
+    NSData *colorAsData = [NSKeyedArchiver archivedDataWithRootObject:color];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:colorAsData
+                                              forKey:BNRTableBgColorKey];
+}
+
++ (BOOL)preferenceEmptyDoc
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    return [defaults boolForKey:BNREmptyDocKey];
+}
+
++ (void)setPreferenceEmptyDoc:(BOOL)emptyDoc
+{
+    [[NSUserDefaults standardUserDefaults] setBool:emptyDoc
+                                            forKey:BNREmptyDocKey];
 }
 
 @end
