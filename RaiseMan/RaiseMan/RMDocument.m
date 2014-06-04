@@ -132,7 +132,7 @@ static void *RMDocumentKVOContext;
     NSAlert *alert = [NSAlert alertWithMessageText:@"Do you really want to remove these people?"
                                      defaultButton:@"Remove"
                                    alternateButton:@"Cancel"
-                                       otherButton:nil
+                                       otherButton:@"Keep, but no raise"
                          informativeTextWithFormat:@"%lu people will be removed", (unsigned long)[selectedPeople count]];
     
     // An alert sheet is an alert window
@@ -155,8 +155,13 @@ static void *RMDocumentKVOContext;
     if (choice == NSAlertDefaultReturn) {
         [[self employeeController] remove:nil];
     }
-}
 
+    if (choice == NSAlertOtherReturn) {
+        for (Person *employee in [[self employeeController] selectedObjects]) {
+            [employee setValue:@0.0 forKey:@"expectedRaise"];
+        }
+    }
+}
 
 
 #pragma mark - KVC for employees
