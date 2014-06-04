@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF365384193E9B3F003A4FB6 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF365383193E9B3F003A4FB6 /* PreferenceController.m */; };
+		AF365387193E9BBA003A4FB6 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF365386193E9BBA003A4FB6 /* AppController.m */; };
+		AF365389193E9D6A003A4FB6 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF365388193E9D69003A4FB6 /* Preferences.xib */; };
+		AF36538B193EAA51003A4FB6 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF36538A193EAA51003A4FB6 /* About.xib */; };
+		AF36538E193EADFE003A4FB6 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF36538D193EADFE003A4FB6 /* AboutController.m */; };
 		AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */ = {isa = PBXBuildFile; fileRef = AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */; };
 		AFF925C6193768F000116463 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF925C5193768F000116463 /* Cocoa.framework */; };
 		AFF925D0193768F100116463 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AFF925CE193768F100116463 /* InfoPlist.strings */; };
@@ -34,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF365382193E9B3F003A4FB6 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PreferenceController.h; path = ../PreferenceController.h; sourceTree = "<group>"; };
+		AF365383193E9B3F003A4FB6 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PreferenceController.m; path = ../PreferenceController.m; sourceTree = "<group>"; };
+		AF365385193E9BBA003A4FB6 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		AF365386193E9BBA003A4FB6 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		AF365388193E9D69003A4FB6 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		AF36538A193EAA51003A4FB6 /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		AF36538C193EADFE003A4FB6 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		AF36538D193EADFE003A4FB6 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		AFA2E2A2193BC39A005FA114 /* RaiseMan.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = RaiseMan.icns; sourceTree = "<group>"; };
 		AFF925C2193768F000116463 /* RaiseMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaiseMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF925C5193768F000116463 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -122,13 +135,21 @@
 		AFF925CB193768F100116463 /* RaiseMan */ = {
 			isa = PBXGroup;
 			children = (
-				AFF925D7193768F100116463 /* RMDocument.h */,
-				AFF925D8193768F100116463 /* RMDocument.m */,
+				AF365385193E9BBA003A4FB6 /* AppController.h */,
+				AF365386193E9BBA003A4FB6 /* AppController.m */,
+				AF36538C193EADFE003A4FB6 /* AboutController.h */,
+				AF36538D193EADFE003A4FB6 /* AboutController.m */,
+				AF365388193E9D69003A4FB6 /* Preferences.xib */,
+				AFF925E0193768F100116463 /* Images.xcassets */,
+				AFF925DD193768F100116463 /* MainMenu.xib */,
 				AFF925FC193769AB00116463 /* Person.h */,
 				AFF925FD193769AB00116463 /* Person.m */,
+				AF365382193E9B3F003A4FB6 /* PreferenceController.h */,
+				AF36538A193EAA51003A4FB6 /* About.xib */,
+				AF365383193E9B3F003A4FB6 /* PreferenceController.m */,
+				AFF925D7193768F100116463 /* RMDocument.h */,
+				AFF925D8193768F100116463 /* RMDocument.m */,
 				AFF925DA193768F100116463 /* RMDocument.xib */,
-				AFF925DD193768F100116463 /* MainMenu.xib */,
-				AFF925E0193768F100116463 /* Images.xcassets */,
 				AFF925CC193768F100116463 /* Supporting Files */,
 			);
 			path = RaiseMan;
@@ -242,10 +263,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF365389193E9D6A003A4FB6 /* Preferences.xib in Resources */,
 				AFF925DC193768F100116463 /* RMDocument.xib in Resources */,
 				AFF925E1193768F100116463 /* Images.xcassets in Resources */,
 				AFF925D0193768F100116463 /* InfoPlist.strings in Resources */,
 				AFF925D6193768F100116463 /* Credits.rtf in Resources */,
+				AF36538B193EAA51003A4FB6 /* About.xib in Resources */,
 				AFA2E2A3193BC39A005FA114 /* RaiseMan.icns in Resources */,
 				AFF925DF193768F100116463 /* MainMenu.xib in Resources */,
 			);
@@ -266,8 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF365384193E9B3F003A4FB6 /* PreferenceController.m in Sources */,
+				AF36538E193EADFE003A4FB6 /* AboutController.m in Sources */,
 				AFF925FE193769AB00116463 /* Person.m in Sources */,
 				AFF925D2193768F100116463 /* main.m in Sources */,
+				AF365387193E9BBA003A4FB6 /* AppController.m in Sources */,
 				AFF925D9193768F100116463 /* RMDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
